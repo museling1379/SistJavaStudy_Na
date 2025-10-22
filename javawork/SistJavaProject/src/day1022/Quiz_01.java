@@ -38,14 +38,14 @@ public class Quiz_01 {
 		price=sc.nextInt();
 		System.out.println(price);
 		
-		System.out.println(name+num+"개는 총 "+(num*price)+"입니다");
-		System.out.println("5개 이상은 10프로 DC됨");
+		System.out.println(name+num+"개는 총 "+(num*price)+"원 입니다");
 		if (num>=5) {
 			int final_price=((price/10)*num)*9;
+			System.out.println("5개 이상은 10프로 할인 됩니다");
 			System.out.println("할인된 총금액: "+final_price+"원");
 		}
 		else 
-			System.out.println("할인되지 않은 금액: "+price);
+			System.out.println("총 금액: "+(price*num)+"원");
 		
 
 	}
